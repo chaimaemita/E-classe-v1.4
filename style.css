@@ -1,0 +1,63 @@
+#sbar{
+    display: none;
+}
+#cartes{
+    display: none;
+}
+#row{
+    display: block;
+}
+@media screen and (max-width: 1120px){
+    #da{
+        display: none;
+    }
+}
+@media screen and (max-width: 986px){
+    #cont{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 862px){
+    #cartes{
+        display: block;
+    }
+    #row{
+        display: none;
+    }
+}
+@media screen and (max-width: 823px){
+    #logo{
+        font-size: large;
+    }
+}
+@media screen and (max-width: 800px) {
+    #sbar:checked+ #side{
+        display: block;
+    }
+    #side{
+        display: none;
+    }
+    #cont{
+        display: inline;
+    }
+    body{
+        width: 100%;
+        position: relative;
+    }
+    #side {
+        width: 100%;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+    }
+    #ret{
+        z-index: 2;
+    }
+    #cartes{
+        display: block;
+    }
+    #row{
+        display: none;
+    }
+}
